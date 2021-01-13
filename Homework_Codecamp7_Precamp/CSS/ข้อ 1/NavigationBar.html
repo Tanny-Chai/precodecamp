@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex Navigation Bar</title>
+
+    <link rel="stylesheet" href="NavigationBar.css">
+    <link rel="stylesheet" href="Paginative.css">
+    <link rel="stylesheet" href="TopLeft.css">
+
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #EDBB99;
+            position: fixed;
+            width: 200px;
+        }
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        li a:hover:not(.activeNa) {
+            background-color: #BA4A00;
+            color: white;
+        }
+        li a.activeEx {
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <ul class="ulNa">
+        <li class="liNa"><a href="./description.html">คำอธิบาย</a></li>
+        <li class="liNa"><a href="./Tooltips.html">tooltip</a></li>
+        <li class="liNa"><a href="./Pagination.html">pagination</a></li>
+        <li class="liNa"><a class="activeNa" href="#">navigation bar</a></li>
+        <li class="liNa"><a href="./Dropdown.html">dropdown</a></li>
+        <li class="liNa"><a href="./Creator.html">ผู้จัดทำ</a></li>
+    </ul>
+    <!-- Navigation Bar -->
+
+    <!-- Example -->
+    <div class="topleft">
+        <h1>ตัวอย่างของ Navigation Bar</h1>
+    </div>
+    
+    <ul style="margin-top: 10px; margin-left: 40%;">
+        <li><a href="./description.html">คำอธิบาย</a></li>
+        <li><a href="./Tooltips.html">tooltip</a></li>
+        <li><a href="./Pagination.html">pagination</a></li>
+        <li><a class="activeEx" href="#">navigation bar</a></li>
+        <li><a href="./Dropdown.html">dropdown</a></li>
+        <li><a href="./Creator.html">ผู้จัดทำ</a></li>
+    </ul>
+    <div style="margin-top:250px; margin-left:450px; font-size:25px; width:500px;">
+        ตรงแถบ Navigation Bar มีสีเข้มกว่าแถบรายการอื่น หมายถึงเรากำลังอยู่ในหน้าของแถบรายการนี้
+    </div>
+    <!-- Example -->
+
+    <!-- Pagination -->
+    <div class="pagination" style="margin-top: 30px; margin-left: 35%;">
+        <a href="./Pagination.html">&laquo;</a>
+        <a href="./description.html">1</a>
+        <a href="./Tooltips.html">2</a>
+        <a href="./Pagination.html">3</a>
+        <a class="active" href="#">4</a>
+        <a href="./Dropdown.html">5</a>
+        <a href="./Creator.html">6</a>
+        <a href="./Dropdown.html">&raquo;</a>
+    </div>
+    <!-- Pagination -->
+</body>
+</html>

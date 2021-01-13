@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เนื้อข่าว</title>
+    <link rel="stylesheet" href="NavigationBar.css">
+    <style>
+        /* grid-area */
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto;
+            grid-gap: 10px;
+            padding: 10px;
+        }
+        .grid-container > div {
+            text-align: justify;
+            padding: 10px;
+            font-size: 20px;
+            /* background-color: yellow; */
+        }
+            /* จัด gird */
+            .item-edge-start {
+                grid-area: 1/1/4/2;
+            }
+            .item-edge-end {
+                grid-area: 1/7/4/8;
+            }
+            .item-news {
+                grid-area: 1/2/3/5;
+            }
+            .item-relate {
+                grid-area: 3/2/4/5;
+            }
+            .item-other {
+                grid-area: 1/5/4/7;
+            }
+             /* จัด gird */
+        /* grid-area */
+
+        /* link style */
+        a:link {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        /* link style */
+    </style>
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <ul class="ulNa" style="padding: 8px 10px;">
+        <li class="liNa" style="margin-left: 30px;"><a href="./HomeNew.html">BBC NEWS | ไทย</a></li>
+    </ul>
+    <ul class="ulNa">
+        <li class="liNa" style="margin-left: 50px;"><a href="./HomeNew.html">หน้าแรก</a></li>
+        <li class="liNa"><a href="./Science.html">ข่าววิทยาศาสตร์</a></li>
+    </ul class="ulNa">
+    <!-- Top Navigation Bar -->
+
+    <!-- Grid-container -->
+    <div class="grid-container">
+        <div class="item-edge-start"></div>
+
+    <!-- เนื้อหาหลัก -->
+        <div class="item-news">
+        <h1>หน่วยพันธุกรรมของสิ่งมีชีวิตแรก<br>
+            บนโลก เกิดจากดีเอ็นเอ - อาร์เอ็นเอ<br> 
+            ผสมผสานกัน</h1> <br>
+            <p style="color:grey; font-size: 20px;">3 มกราคม 2021</p> <br>
+            <img src="./img/DNA.png" alt="DNA">
+            <p>
+                <b>
+                    ทีมนักเคมีจากสถาบันวิจัยสคริปส์ (Scripps Research) ของสหรัฐฯ ค้นพบว่า<br>
+                    สารประกอบชนิดหนึ่งซึ่งน่าจะมีอยู่ในโลกยุคดึกดำบรรพ์ อาจเป็นตัวประสานถักทอ<br>
+                    โมเลกุลที่เป็นองค์ประกอบพื้นฐานของหน่วยพันธุกรรมเข้าด้วยกัน จนเกิดเป็นโมเลกุล<br>
+                    ซับซ้อนชนิดแรกที่สามารถผลิตซ้ำตัวของมันเองได้ หรือเรียกอีกอย่างก็คือ <br>
+                    "สารพันธุกรรม" ที่เป็นต้นกำเนิดสิ่งมีชีวิตบนโลกนั่นเอง
+                </b>
+            </p>
+            <p>
+                รายงานวิจัยที่ตีพิมพ์ในวารสาร Angewandte Chemie ระบุว่า สารประกอบที่เป็นตัวถักทอยีน <br>
+                หรือหน่วยพันธุกรรมตัวแรกของโลกขึ้นมาอาจได้แก่ "ไดอะมิโดฟอสเฟต" <br>
+                (Diamidophosphate - DAP) โดยทีมผู้วิจัยพบว่ามันสามารถเชื่อมประสานเบส<br>
+                ที่เป็นองค์ประกอบย่อยของดีเอ็นเอ หรือดีออกซีนิวคลีโอไซด์ (Deoxynuclepside) <br>
+                เข้าด้วยกัน จนเกิดเป็นสายดีเอ็นเอขึ้นได้
+            </p>
+            <ul>
+                <li>สิ่งมีชีวิตหลายเซลล์เกิดขึ้นบนโลกเร็วกว่าที่คาด 1 พันล้านปี</li>
+                <li>มนุษย์อาจมีรหัสพันธุกรรมน้อยลงกว่าเดิมถึง 20%</li>
+                <li>สองนักวิจัยหญิงคิดค้นกรรไกรพันธุกรรม "คริสเปอร์-แคสไนน์" พิชิตโนเบลเคมี 2020</li>
+            </ul>
+            <p>
+                การค้นพบดังกล่าวถือเป็นหลักฐานใหม่ที่ร่วมหักล้างแนวคิด "โลกอาร์เอ็นเอ" (RNA World) <br>
+                ซึ่งนักวิทยาศาสตร์ส่วนใหญ่ในปัจจุบันเชื่อว่า สารพันธุกรรมในโลกยุคดึกดำบรรพ์มีเพียงอาร์เอ็นเอ <br>
+                และสิ่งมีชีวิตแรกบนโลกก็ถือกำเนิดขึ้นจากอาร์เอ็นเอเพียงอย่างเดียวเท่านั้น ส่วนดีเอ็นเอ<br>
+                เป็นสารพันธุกรรมที่วิวัฒนาการขึ้นภายหลัง
+            </p>
+            <div>
+            <img src="./img/molegul.jpg" alt="molegul">
+            <div style="color: grey; font-size: 15px;">ภาพจำลองโมเลกุลของอาร์เอ็นเอ 
+                ซึ่งเชื่อมต่อกันเป็นสายยาวและขดเป็นวงกลมคล้ายสปริง</div>
+            </div>
+            <p>
+                รศ.ดร. รามานารายาณัน กฤษณมูรติ ผู้นำทีมวิจัยบอกว่า งานวิจัยหลายชิ้นของพวกเขาก่อนหน้านี้ <br>
+                รวมทั้งผลการศึกษาล่าสุดต่างชี้ว่า มีความเป็นไปได้สูงที่ชีวิตจะเกิดขึ้นจากสารพันธุกรรมลูกผสมที่มีทั้ง<br>
+                อาร์เอ็นเอและดีเอ็นเอเป็นองค์ประกอบ หากโลกในยุคที่ยังไร้สิ่งมีชีวิตนั้นมีสาร DAP <br>
+                และดีออกซีนิวคลีโอไซด์อยู่ทั่วไป เช่นเดียวกับอาร์เอ็นเอ
+            </p>
+            <p>
+                ก่อนหน้านี้ทีมผู้วิจัยตั้งข้อสงสัยว่า โครงสร้างของอาร์เอ็นเอนั้นมีลักษณะที่เหนียวหนึบเกินไป <br>
+                จนอาจทำให้การแยกสายอาร์เอ็นเอใหม่ที่ผลิตซ้ำขึ้นมาออกจากต้นแบบเป็นไปได้ยาก ซึ่งก็จะ<br>
+                ส่งผลให้ทำหน้าที่สารพันธุกรรมแรกของสิ่งมีชีวิตได้ไม่สมบูรณ์นัก<br>
+            </p>
+            <p>
+                ในขณะเดียวกัน ทีมผู้วิจัยกลับพบว่าโมเลกุลลูกผสมอาร์เอ็นเอ - ดีเอ็นเอ ที่พวกเขาสร้างขึ้น <br>
+                ในห้องปฏิบัติการ สามารถจะเป็นต้นแบบการทำซ้ำและแยกสายของสารพันธุกรรมที่เกิดขึ้นใหม่ <br>
+                ได้ดีกว่ามาก ทั้งยังพบว่าสภาพแวดล้อมตามธรรมชาติของโลกดึกดำบรรพ์ สามารถจะให้กำเนิด <br>
+                ทั้งอาร์เอ็นเอและดีเอ็นเอได้พร้อมกันด้วย โดยมีสาร DAP เป็นตัวทำปฏิกิริยาเชื่อมประสาน <br>
+                องค์ประกอบของสารพันธุกรรมทั้ง 2 ชนิดเข้าด้วยกัน <br>
+            </p>
+            <p>
+                "การค้นพบนี้เป็นก้าวสำคัญในการพัฒนาแบบจำลองทางเคมีอย่างละเอียด เพื่อแสดงให้เห็นว่า <br>
+                สิ่งมีชีวิตชนิดแรกบนโลกเกิดขึ้นมาได้อย่างไร" รศ.ดร. กฤษณมูรติกล่าว
+            </p>
+        </div>
+        <!-- เนื้อหาหลัก -->
+
+    <!-- แถบเนื้อหาที่เกี่ยวข้อง -->
+        <div class="item-relate">
+            <h3>อ่านเรื่องที่เกี่ยวข้อง</h3>
+            <a style="color: gray;" href="#"><img style="width: 250px;" src="./img/cut.jpg" alt="cut"> <br>
+                หน่วยพันธุกรรมของสิ่งมีชีวิตแรก<br>
+                บนโลก เกิดจากดีเอ็นเอ - <br>
+                อาร์เอ็นเอ ผสมผสานกัน
+            </a>
+        </div>
+        <div class="item-other">
+            <h3>ข่าวเด่น</h3>
+            <a href="#" style="color:gray;">พื้นที่เสี่ยงโควิด</a> <br> <br>
+            <a href="#" style="color: black;">การเหยียดเพศจะหมดไป</a> <br> <br>
+            <a href="#" style="color: gray;">โควิดเป็นเหตุ</a> <br> <br>
+            <h3>เรื่องที่น่าสนใจ</h3>
+            <a style="color: gray;" href="#"><img style="width: 250px;" src="./img/vaccine.jpg" alt="vaccine"> <br>
+                หลายฝ่ายห่วงอินเดีย “เร่ง” <br> อนุมัติวัคซีนโควิดที่พัฒนาเอง</a>
+        </div>
+        <div class="item-edge-end"></div>
+    </div>
+    <!-- แถบเนื้อหาที่เกี่ยวข้อง -->
+    <!-- Grid-container -->
+
+    <!-- Bottom Navigation Bar -->
+    <ul class="ulNa" style="padding: 8px 10px;">
+        <li class="liNa" style="margin-left: 30px;" ><a href="./HomeNew.html">BBC NEWS | ไทย</a></li>
+    </ul>
+    <ul class="ulUnder" style="border-bottom: 1px solid grey;">
+        <li class="liUnder" style="margin-left: 30px;"><a href="#">ทำไมคุณจึงวางใจ บีบีซี ได้</a></li> 
+    </ul>
+    <ul class="ulUnder">
+        <li class="liUnder" style="margin-left: 30px;"><a href="#">เงื่อนไขการใช้งานของ บีบีซี</a></li>
+        <li class="liUnder" style="margin-left: 30px;"><a href="#">นโยบายความเป็นส่วนตัว</a></li>
+        <li class="liUnder" style="margin-left: 30px;"><a href="#">ติดต่อบีบีซี</a></li>
+    </ul>
+    <ul class="ulUnder">
+        <li class="liUnder" style="margin-left: 30px;"><a href="#">เกี่ยวกับบีบีซี</a></li>
+        <li class="liUnder" style="margin-left: 30px;"><a href="#">คุกกีส์</a></li>
+        <li class="liUnder" style="margin-left: 30px;"><a href="#">Adchoice / Do not Sell My Info</a></li>
+    </ul>
+    <!-- Bottom Navigation Bar -->
+</body>
+</html>

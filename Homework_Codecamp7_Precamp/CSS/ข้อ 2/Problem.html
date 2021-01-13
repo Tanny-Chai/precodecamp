@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem</title>
+    <style>
+        .flex-container {
+            display: flex;
+            align-items: stretch;
+            margin-top: 30px;
+        }
+        .flex-container > div {
+            text-align: left;
+        }
+
+        .p1 {
+            font-size: 30px;
+        }
+        .p2 {
+            font-size: 20px;
+        }
+
+        img {
+            height: 500px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div style="width:100%;height: 50px;background-color: greenyellow; text-align: center;text-align: center;">
+        <h1>การวางโครงสร้างเว็บด้วย grid หรือ flex</h1>
+    </div>
+    <br>
+    <div class="flex-container">
+        <div style="flex-grow: 2;"></div>
+        <div style="flex-grow: 15;">
+            <p class="p1">
+                ชื่อ : พรรษ  บุญครองสุข
+            </p>
+            <p class="p1">
+                Email : Pat.Boonkrongsook@gmail.com
+            </p>
+            <hr>
+            <br>
+            <h2><u>Problem</u></h2>
+            <p class="p2">
+                ให้ทุกคนลองคิดว่าหน้าเว็บต่อไปนี้ควรวางโครงสร้าง HTML อย่างไร และ ใช้การจัดรูปแบบ grid หรือ flex อย่างไร <br>
+                ให้ทุกคนหา
+                <ul>
+                    <li>เว็บ ข่าว มา 1 เว็บ <a id="back" href="#news">ไป</a></li>
+                    <li>เว็บ ช๊อปปิ้งมา 1 เว็บ <a href="#shop">ไป</a></li>
+                    <li>เว็บ กระทู้ หรือ การเรียนการสอนมา 1 เว็บ <a href="#teach">ไป</a></li>
+                </ul>
+            </p>
+            <p class="p2">
+                ให้ส่ง link เว็บและเขียนสรุปคราวๆว่าจะว่างโครงสร้างในการเขียนเว็บอย่างไร <br>
+                ถ้าสามารถทำได้อยากให้ ทำลงในไฟล์ HTML คล้ายเว็บตัวอย่างมาจะยิ่งดี
+            </p>
+            <hr>
+            <br>
+            <h2 id="news"><u>เว็บข่าว</u></h2>
+            <p class="p2">
+                เว็บข่าวนำมาเป็นตัวอย่างในการวางฝึกวางรูปแบบ คือ เว็บไซต์ BBC News ไทย
+            </p>
+            <h3>
+                สามารถเข้าชมเว็บตัวอย่างที่นี่
+            </h3>
+            <br>
+            <p style="text-align: center;" class="p2">
+                <a href="https://www.bbc.com/thai/features-55522403" target="_bank">
+                    BBC News ไทย
+                </a>
+            </p>
+            <br>
+            <p class="p2">
+                เมื่อได้ศึกษาหน้าเว็บดังกล่าวแล้ว ผมได้วางโครงสร้างหน้าเว็บไว้ดังนี้
+            </p>
+            <h3><u>หน้าเนื้อหาข่าว</u></h3>
+            <p class="p2">
+                หน้านี้ผมได้วางโครงสร้างหน้าเว็บด้วย grid-container  โดย <br>
+                แบ่งเป็น grid-items ทั้งหมด 5 item <br>
+                ประกอบไปด้วย
+                <ul>
+                    <li>edge-star</li>
+                    <li>news</li>
+                    <li>relate</li>
+                    <li>other</li>
+                    <li>edge-en</li>
+                </ul>
+                แต่ละ item กำหนดความกว้างยาวด้วย grid-area ตาม row กับ column เพื่อใส่เนื้อหาที่ต่างกัน <br>
+            </p>
+            <br>
+            <p style="text-align: center;">
+                <img src="./img/Flex-container News Articles.drawio.jpg" alt="เนื้อหาข่าว"> <br>
+                ภาพแสดงโครงหน้า grid-container พอสังเขป
+            </p>
+
+            <h3>ส่วนลิงค์นี้ เป็นเว็บเพจที่ผมเขียนขึ้นตามเว็บตัวอย่างครับ</h3>
+            <br>
+            <p style="text-align: center;" class="p2">
+                <a href="./์์News Website/News articles.html" target="_bank">
+                    เนื้อหาข่าว
+                </a>
+            </p>
+            <br>
+            <p class="p2">
+                ในส่วนเนื้อหาข่าว ผมยังทำลิงค์ไว้ให้คลิกไปชมหน้าอื่นๆได้อีก คือ หน้าหมวดหมู่ข่าว ซึ่งในที่นี้เป็นข่าววิทยาศาสตร์ <br>
+                และเข้าไปดูหน้าแรกของเว็บไซต์ได้ ซึ่งผมวางโครงสร้างหน้าเว็บไว้แบบเดียวกันด้วย flex-container <br>
+                แบ่งเป็น 3 column โดยใช้ flex-grow กำหนดให้ column กลางมีกว้างมากที่สุด ส่วนซ้ายขวา กำหนดไว้ <br>
+                เพื่อเป็นระยะขอบของหน้าเว็บเท่านั้น
+            </p>
+            <p style="text-align: center;">
+                <img src="./img/Scince News.drawio (pdf.io).jpg" alt="flex-containerหลัก"> <br>
+                ภาพแสดงโครงหน้าหลัก flex-container พอสังเขป
+            </p>
+            <br>
+            <p class="p2">
+                แต่ภายใน column ที่ 2 ซึ่งเป็นส่วนเนื้อหาของ flex-container นี้ ยังแบ่งเป็น grid-container <br>
+                โดยมี 3 item ดังนี้
+                <u>
+                    <li>item สำหรับ หัวข้อข่าว</li>
+                    <li>item สำหรับ รูปภาพ</li>
+                    <li>item สำหรับ คำอธิบาย</li>
+                </u>
+            </p>
+            <p style="text-align: center;">
+                <img src="./img/Link news.drawio (pdf.io).jpg" alt=""> <br>
+                ภาพแสดงโครงหน้าภายใน flex-container ด้วย grid-container 
+            </p>
+            <br>
+            <p style="text-align: center;" class="p2">
+                <a href="./์์News Website/Science.html" target="_bank">
+                    หน้าหมวดข่าววิทยาศาสตร์
+                </a>
+                <br>
+                <a href="./์์News Website/HomeNew.html" target="_bank">
+                    หน้า Home
+                </a>
+            </p>
+            <p class="p2" style="text-align: right;">
+                <a href="#back">กลับ</a>
+            </p>
+            <hr>
+            <br>
+            <h2 id="shop"><u>เว็บช็อปปิ้ง</u></h2>
+            <p class="p2">
+                เว็บช็อปปิ้งนำมาเป็นตัวอย่างในการวางฝึกวางรูปแบบ คือ เว็บไซต์ Shopee ไทย
+            </p>
+            <h3>สามารถเข้าชมเว็บตัวอย่างที่นี่</h3>
+            <br>
+            <p class="p2" style="text-align: center;">
+                <a href=
+                "https://shopee.co.th/era-won-%E0%B9%80%E0%B8%AA%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B9%89%E0%B8%95-%E0%B8%97%E0%B8%A3%E0%B8%87%E0%B8%AA%E0%B8%A5%E0%B8%B4%E0%B8%A1-Oxford-Shirt-%E0%B9%81%E0%B8%82%E0%B8%99%E0%B8%A2%E0%B8%B2%E0%B8%A7-%E0%B8%AA%E0%B8%B5-Black-Creamy-White-i.52506483.2272524170"
+                target="_bank">
+                Shopee
+                </a>
+            </p>
+            <br>
+            <p class="p2">
+                เว็บนี้ ผมใช้ flex-container ที่ Navigation Bar และใช้ grid-conatiner ที่ส่วนเนื้อหา <br>
+                ในส่วน Navigation ก็ถูกแบ่งเป็น 2 ส่วน คือ ส่วนบน และส่วนล่าง ดังนี้ <br><br>
+                ส่วนบน มี 5 flex ดังนี้
+                <ul>
+                    <li>egde-start</li>
+                    <li>link group 1</li>
+                    <li>space</li>
+                    <li>link group 2</li>
+                    <li>egde-end</li>
+                </ul>
+                ส่วนล่าง มี 4 flex ดังนี้
+                <ul>
+                    <li>edge-start</li>
+                    <li>space</li>
+                    <li>search bar</li>
+                    <li>edge-end</li>
+                </ul>
+            </p>
+            <p style="text-align: center;">
+                <img src="./img/Navigation Bar Top Shop.drawio (pdf.io).jpg" alt="Navigation Bar">
+            </p>
+            <br>
+            <p class="p2">
+                ในส่วนเนื้อหา ผมจัดวางด้วย grid-conatiner มี 6 grid-items ดังนี้
+                <ul>
+                    <li>รูปภาพ</li>
+                    <li>สไลด์ตตัวอย่าง</li>
+                    <li>Space</li>
+                    <li>ชื่อสินค้า</li>
+                    <li>ราคา</li>
+                    <li>การจัดส่ง</li>
+                </ul>
+            </p>
+            <p style="text-align: center;">
+                <img src="./img/Cargo Data.drawio.jpg" alt="Cargo">
+            </p>
+            <br>
+            <h3>ลิงค์ไปยังเว็บที่ผมเขียนขึ้นครับ</h3>
+            <p style="text-align: center;" class="p2">
+                <a href="./Shop Website/cargo.html" target="_bank">
+                    เว็บช็อปปิ้ง
+                </a>
+            </p>
+            <p class="p2" style="text-align: right;">
+                <a href="#back">
+                    กลับ
+                </a>
+            </p>
+            <hr>
+            <br>
+            <h2 id="teach"><u>เว็บการเรียนการสอน</u></h2>
+            <p class="p2">
+                เว็บการเรียนการสอน ที่นำมาใช้เป็นต้นแบบ คือเว็บ THAIMOOC
+            </p>
+            <h3>สามารถเข้าชมเว็บไซต์ได้ที่นี่</h3>
+            <p class="p2">
+                แต่ก่อนจะเข้าลิงค์นี้ได้ ต้องสมัคร user เสียก่อน จึงจะเข้าชมได้ครับ
+            </p>
+            <br>
+            <p class="p2" style="text-align: center;">
+                <a href=
+                "https://lms.thaimooc.org/courses/course-v1:PIM+PIM006+2020/courseware/b173bf1c528942449cca3b2c0c89f14d/12b5ea987d84423790ac2a9960609d21/1?activate_block_id=block-v1%3APIM%2BPIM006%2B2020%2Btype%40vertical%2Bblock%400c06c8c78bb247d69ed9b7ac4b8fd4a0"
+                target="_bank">
+                    thaimooc
+                </a>
+            </p>
+            <br>
+            <p class="p2">
+                เริ่มจากกำหนด flex-container 3 column โดย column 1 และ column 3 เป็นระยะขอบหน้า และขอบหลัง <br>
+                ส่วน column 2 เป็นส่วนของเนื้อหา ซึ่งนำมาแบ่งเป็น grid-container 3 item ดังต่อไปนี้
+                <ul>
+                    <li>video</li>
+                    <li>คำอธิบาย</li>
+                    <li>space</li>
+                </ul>
+            </p>
+            <br>
+            <p style="text-align: center;">
+                <img src="./img/Teaching.drawio.jpg" alt="Theaching">
+            </p>
+            <h3>ลิงค์ไปยังเว็บที่เขียนขึ้นครับ</h3>
+            <br>
+            <p class="p2" style="text-align: center;">
+                <a href="./Teaching Web/TeachingWed.html" target="_bank">
+                    เว็บการเรียนการสอนออนไลน์
+                </a>
+            </p>
+            <p class="p2" style="text-align: right;">
+                <a href="#back">
+                    กลับ
+                </a>
+            </p>
+        </div>
+        <div style="flex-grow: 1;"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.ulNa {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #EDBB99;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.liNa {
+    float: left;
+}
+.liNa a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.liNa a:hover:not(.activeNa) {
+    background-color: #BA4A00;
+    color: white;
+}
+.activeNa {
+    background-color: coral;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargo</title>
+    <link rel="stylesheet" href="NavigationBar.css">
+    <style>
+    .grid-container {
+        display: grid;
+        grid-gap: 10px;
+        padding: 10px;
+    }
+    .grid-item {
+        text-align: left;
+        padding: 20px;
+    }
+    .item1 {
+        grid-area: 1/1/3/2;
+    }
+    .item2 {
+        grid-area: 3/1/4/2;
+    }
+    .item3 {
+        grid-area: 4/1/6/2;
+    }
+    .item4 {
+        grid-area: 1/2/2/4;
+    }
+    .item5 {
+        grid-area: 2/2/3/4;
+    }
+    .item6 {
+        grid-area: 3/2/6/4;
+    }
+
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="flex-container">
+        <div style="flex-grow: 1;"></div>
+        <div style="flex-grow: 5;">
+            <a style="font-size:15px;" href="#">Shopee Home |</a>
+            <a style="font-size: 15px;" href="#">ขายสินค้ากับช้อปปี้ |</a>
+            <a style="font-size: 15px;" href="#">ดาวน์โหลด |</a>
+            <span style="font-size: 15px; color: white;">ติดตามเราบน |</span>
+            <a style="font-size: 15px;" href="#">facebook</a>
+        </div>
+        <div style="flex-grow: 4;"></div>
+        <div style="flex-grow: 2;">
+            <a style="font-size:15px" href="#">การแจ้งเตือน</a>
+            <a style="font-size:15px" href="#">ช่วยเหลือ</a>
+            <a style="font-size:15px" href="#">สมัครใหม่ |</a>
+            <a style="font-size:15px" href="#">เข้าสู่ระบบ</a>
+        </div>
+        <div style="flex-grow: 1;"></div>
+    </div>
+    <div class="flex-container">
+        <div style="line-height:75px;flex-grow: 1;font-size: 30px;"></div>
+        <div style="line-height:75px;flex-grow: 2;font-size: 30px;">
+            <a class="aShop" href="#">Shopee Mall</a>
+        </div>
+        <div style="line-height:75px;flex-grow: 5;font-size: 30px;"></div>
+        <div style="line-height:75px;flex-grow: 5;font-size: 30px;">
+            <input style="height: 30px; width: 500px;" type="text">
+            <button style="width: 40px; height: 40px;">ค้น</button>
+        </div>
+    </div>
+    <!-- Navigation Bar -->
+
+    <br>
+    <span style="margin-left: 30px; font-size: 15px;">
+        <a style="color: black; text-decoration: none;" href="#">shopee &gt</a>
+        <a style="color: black; text-decoration: none;" href="#">เสื้อผ้าแฟชั่นผู้ชาย &gt</a>
+        <span>เสื้อเชิ้ต</span>
+    </span>
+    <div class="grid-container">
+        <div class="grid-item item1">
+            <img style="width:300px;height:350px;" src="./img/Shirt.jpg" alt="shirt">
+        </div>
+        <div style="border: 1px solid black;" class="grid-item item2"><h1>สไลด์ภาพตัวอย่างสินค้า</h1></div>
+        <div class="grid-item item3"></div>
+        <div class="grid-item item4">
+            <h1>เสื้อเชิ้ตชายแขนยาว สีน้ำตาล</h1>
+        </div>
+        <div style="background-color: darkgray;" class="grid-item item5">
+            <h1>ราคา:  <font color="red">฿594</font></h1>
+        </div>
+        <div class="grid-item item6">
+            <h1>การจัดส่ง</h1> <br> <br> <br> <br> <br>
+        </div>
+    </div>
+
+</body>
+</html>

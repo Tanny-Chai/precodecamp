@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คำอธิบาย</title>
+    
+    <link rel="stylesheet" href="NavigationBar.css">
+    <link rel="stylesheet" href="Paginative.css">
+    <link rel="stylesheet" href="TopLeft.css">
+
+    <style>
+        body {
+            background-color: #EBF5FB;
+        }
+        .center {
+            display: flex;
+            margin-left: 30%;
+            margin-top: -35px;
+            position:static;
+            font-size: 20px;
+            background-color: #F9E79F ;
+            border: 10px solid #EC7063 ;
+            padding: 10px 10px;
+            width: 500px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <ul class="ulNa">
+        <li class="liNa"><a class="activeNa" href="#">คำอธิบาย</a></li>
+        <li class="liNa"><a href="./Tooltips.html">tooltip</a></li>
+        <li class="liNa"><a href="./Pagination.html">pagination</a></li>
+        <li class="liNa"><a href="./NavigationBar.html">navigation bar</a></li>
+        <li class="liNa"><a href="./Dropdown.html">dropdown</a></li>
+        <li class="liNa"><a href="./Creator.html">ผู้จัดทำ</a></li>
+    </ul>
+    <!-- Navigation Bar -->
+
+    <!-- Description -->
+        <div class="topleft">
+            <h1>คำอธิบาย</h1>
+        </div>
+        <br>
+        <br>
+        <div class="center">
+            <ul>
+                <li><b><font size=5px>Tooltips:</font></b> 
+                    คือ แถบข้อความที่จะปรากฏขึ้นเมื่อเราเอาเมาส์ไปวางไว้บน object ที่ถูกกำหนดค่าไว้</li>
+                <li><b><font size=5px>Pagination</font></b> 
+                    คือ แถบ button ให้ user สามารถคลิกเมาส์เลือกไปดูในหน้าเว็บต่างๆที่มีได้ 
+                    มักถูกจัดวางไว้<br>ด้านล่างของหน้าเว็บ</li>
+                <li><b><font size=5px>Navigation Bar</font></b>
+                    คือ แถบแสดงรายการหัวข้อของเว็บ ให้ user สามารถคลิกเลือกไปในหัวข้อหน้าที่ต้องการได้ 
+                    มักถูกจัดวางไว้เป็นแถบแนวนอนขอบบน หรือ ไว้เป็นแถบแนวตั้ง</li>
+                <li><b><font size=5px>Dropdown</font></b>
+                    คือ แถบแสดงรายการหที่จะปรากฏขึ้นเมื่อนำเมาส์ไปวางที่ button ให้ user 
+                    สามารถคลิกเลือกไปในรายการที่ต้องการได้</li>
+            </ul>
+        </div>
+        <div style="margin-left: 30%;margin-top: 30px; font-size:20px;">
+            หน้าต่อๆไปจะเป็นการแสดงตัวอย่างของแต่ละเครื่องมือ ดังต่อไปนี้
+        </div>
+    <!-- Description -->
+
+    <!-- ์Pagination -->
+    <div class="pagination" style="margin-top: 10px; margin-left: 35%;">
+        <a class="active" href="#">1</a>
+        <a href="./Tooltips.html">2</a>
+        <a href="./Pagination.html">3</a>
+        <a href="./NavigationBar.html">4</a>
+        <a href="./Dropdown.html">5</a>
+        <a href="./Creator.html">6</a>
+        <a href="./Tooltips.html">&raquo;</a>
+    </div>
+    <!-- ์Pagination -->
+</body>
+</html>

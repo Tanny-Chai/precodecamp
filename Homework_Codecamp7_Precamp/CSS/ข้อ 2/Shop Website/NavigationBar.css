@@ -1,0 +1,17 @@
+.flex-container {
+    display: flex;
+    align-items: stretch;
+    background-color:#FF0000;
+}
+.flex-container > div {
+    margin: 10px;
+    text-align: left;
+}
+.flex-container a {
+    color: white;
+    text-decoration: none;
+}
+.flex-container a:hover {
+    color: white;
+    text-decoration: underline;
+}

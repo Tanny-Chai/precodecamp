@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หมากล้อม</title>
+    <style>
+        /* top */
+        .ulNa {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-bottom: 2px solid #5DADE2;
+  }
+        .liNa {
+    float: left;
+    margin-left: 30px;
+  }
+    /* top */
+
+    /* bottom */
+    .ulBot {
+    list-style-type: none;
+    margin-bottom: 0;
+    padding: 0;
+    overflow: hidden;
+    border-top: 2px solid #5DADE2;
+  }
+    .liBot {
+    float: left;
+    margin-left: 10px;
+  }    
+    /* bottom */
+
+    /* Main Flex */
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-container > div {
+        /* background-color: lightgrey; */
+        width: auto;
+        /* margin: 10px; */
+    }
+    /* Main Flex */
+
+    /* Navigation Bar */
+    .ul-Na {
+        list-style-type: none;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+    }
+    .li-Na {
+        float: left;
+        padding: 14px 16px;       
+    }
+    .Li-Na a {
+        display: block;
+        color: black;
+        text-align: center;
+       
+    }
+    .li-Na a:hover:not(.active-Na) {
+        border-bottom: 5px solid #2980B9 ;
+        padding: 10px 0; 
+    }
+    .active-Na {
+        border-bottom: 5px solid #2980B9;
+        color: #2980B9;
+        padding: 10px 0; 
+    }
+    /* Navigation Bar */
+
+    /* flex-video */
+    .flex-video {
+        display: flex;
+        align-items: stretch;
+        border-left: 1px solid gray;
+        border-right: 1px solid gray;
+    }
+    .flex-video > div {
+        margin: 10px;
+    }
+
+    /* grid-video-branch */
+    .grid-video-branch {
+        display: grid;
+        grid-template-columns: auto auto;
+        /* grid-gap: 10px; */
+        padding: 20px 0;
+    }
+    .grid-video-branch > div {
+        background-color: #F7DC6F;
+        padding: 20px 0;
+    }
+    .item-video-1 {
+        grid-area: 1/1/2/2;
+    }
+    .item-video-2 {
+        grid-area: 1/2/2/3;
+    }
+    .item-video-3 {
+        grid-area: 2/1/3/3;
+    }
+    /* grid-video-branch */
+
+    /* flex-video */
+
+    /* page-position */
+    .a-Po {
+        margin-left: 20px;
+        color: #2980B9;
+        text-decoration: none;
+    }
+    .a-Po:hover {
+        color: darkblue;
+        text-decoration: none;
+    }
+    /* page-position */
+
+    /* Button */
+.a-Button:link, .a-Button:visited {
+  border: 1px solid #D7DBDD ;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+.a-Button:hover, .a-Button:active {
+  padding: 10px 20px;
+  border-bottom: 2px solid #2980B9;
+}
+
+    /* Button */
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <ul style="margin-left: 10px;" class="ulNa">
+        <li class="liNa">
+            <a href="#">
+                <img style="width: 200px;height: 50px;" src="./img/thaimooc.png" alt="thaimooc">
+            </a>
+        </li>
+    </ul>
+    <br>
+    
+    <!-- Top Bar -->
+
+    <!-- Main Flex -->
+
+    <!-- Navigation Bar -->
+    <div class="flex-container">
+
+        <div>
+            <ul class="ul-Na">
+                <li class="li-Na"><a style="color: black; text-decoration: none;" class="active-Na" href="#">หลักสูตร</a></li>
+                <li class="li-Na"><a style="color: black; text-decoration: none;" href="#">การสนทนา</a></li>
+                <li class="li-Na"><a style="color: black; text-decoration: none;" href="#">Wiki</a></li>
+                <li class="li-Na"><a style="color: black; text-decoration: none;" href="#">ความคืบหน้า</a></li>
+            </ul>
+        </div>
+    <!-- Navigation Bar -->
+
+    <!-- page position -->
+        <div style="border-top: 1px solid gray; border-bottom: 1px solid gray;
+        border-left:1px solid gray; border-right: 1px solid gray; padding: 12px 14px;">
+            <a class="a-Po" href="#">หลักสูตร</a>
+            <span style="margin-left: 10px;">&gt</span>
+            <a class="a-Po" href="#">ชั่วโมงเรียนรู้ที่ 1: ก้าวแรกสู่หมากล้อม</a>
+            <span style="margin-left: 10px;">&gt</span>
+            <a class="a-Po" href="#">1.2 หมากล้อมในประเทศไทย </a>
+            <span style="margin-left: 10px;">&gt</span>
+            <span>1.2.1 วีดิทัศน์หมากล้อมในประเทศไทย</span>
+        </div>
+    <!-- page position -->
+
+        <div style="text-align: center;
+        border-left: 1px solid gray; border-right:1px solid gray;">
+        <br>
+            <a class="a-Button" href="#">&lt Previous</a>
+            <a style="padding:14px 500px;border:1px solid gray" href="#"></a>
+            <a class="a-Button" href="#">Next &gt</a>
+        </div>
+
+        <!-- flex video -->
+        <div class="flex-video">
+            <div style="flex-grow:1"></div>
+    
+        <!-- grid-video-branch -->
+            <div class="grid-video-branch" style="flex-grow:8">
+                    <div style="bottom: 100%;" class="item-video-1">
+                        <h1>Video</h1>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/LTyaxwrIExY" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div style="border: 1px solid black;text-align:center;" class="item-video-2">
+                        <h2>คำอธิบาย</h2>
+                    </div>
+                    <div class="item-video-3"></div>
+                
+            </div>
+        <!-- grid-video-branch -->
+
+            <div style="flex-grow:1"></div>        
+        </div>
+        <div style="border-left: 1px solid gray;
+        border-right: 1px solid gray;border-bottom: 1px solid gray;
+        text-align: center;">
+        <a class="a-Button" href="#">&lt Previous</a>
+        <a class="a-Button" href="#">Next &gt</a>
+        </div>
+
+    </div>
+    <!-- Main Flex -->
+    
+    <!-- Bottom Bar -->
+    <ul class="ulBot">
+        <li class="liBot">
+            <a href="#">
+                <img style="width: 300px;height: 80px;margin-top: 40px;" src="./img/thaimooc.png" alt="thaimooc">
+            </a>
+        </li>
+    </ul>
+    <!-- Bottom Bar -->
+</body>
+</html>

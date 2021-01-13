@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home News Page</title>
+    <link rel="stylesheet" href="NavigationBar.css">
+    <style>
+        /* โครงหน้ารวม */
+         .flex-container {
+             display: flex;
+             align-items: stretch;
+         }
+         .flex-container > div {
+            margin: 10px;
+            text-align: justify;
+            line-height: 75px;
+            font-size: 30px;
+            color: black;
+         }
+         /* โครงหน้ารวม */
+
+        /* ลิงค์ข่าว */
+         .grid-container {
+             display: grid;
+             grid-gap: 10px;
+             padding: 10px;
+         }
+         .grid-item {
+             text-align: center;
+             padding: 10px;
+             font-size: 30px;
+         }
+         .item1 {
+             grid-area: 1/1/2/3;
+         }
+         .item2 {
+             grid-area: 2/1/4/2;
+         }
+         .item3 {
+             grid-area: 2/2/4/3;
+         }
+         /* ลิงค์ข่าว */
+
+         .aHead:link {
+             text-decoration: none;
+         }
+         .aHead:visited {
+             color: black;
+             text-decoration: none;
+         }
+         .aHead:hover {
+             color: blue;
+             text-decoration: none;
+         }
+
+         .aButton:link, a.Button:visited {
+             color: black;
+             padding: 5px 5px;
+             text-align: center;
+             text-decoration: none;
+             display: inline-block;
+             border: 3px solid gray;
+             font-size: 20px;
+             background-color: white;
+         }
+         .aButton:hover, a.Button:active {
+             color: blue;
+         }
+    </style>
+</head>
+<body>
+    <ul class="ulNa" style="padding: 8px 10px;">
+        <li class="liNa" style="margin-left: 30px;"><a href="#">BBC NEWS | ไทย</a></li>
+    </ul>
+    <ul class="ulNa">
+        <li class="liNa" style="margin-left: 50px;"><a href="#">หน้าแรก</a></li>
+        <li class="liNa"><a href="./Science.html">ข่าววิทยาศาสตร์</a></li>
+    </ul class="ulNa">
+
+    <div class="flex-container">
+        <div style="flex-grow: 2; text-align: center;"><h4></h4></div>
+        <div style="flex-grow: 9; border-bottom: 3px solid gray;" class="grid-container">
+            <div class="item1">
+                <p><font size="3px">19:33 3 มกราคม 202119:33 3 มกราคม 2021 </font><br>
+                <a class="aHead" href="./News articles.html">
+                    ยีนของสิ่งมีชีวิตแรกบนโลกเป็นลูกผสมดีเอ็นเอ - อาร์เอ็นเอ</a><p>
+            </div>
+            <div class="item2">
+                <a href="./News articles.html">
+                    <img style="height: 200px;width:400px;" src="./img/DNA.png" alt="DNA">
+                </a>
+            </div>
+            <div class="item3">
+                <font size="5px">การค้นพบใหม่หักล้างแนวคิดเดิมที่เชื่อกันว่า<br> 
+                สิ่งมีชีวิตแรกบนโลกถือกำเนิดจากอาร์เอ็นเอ<br>เพียงอย่างเดียว</font> <br>
+                <a class="aButton" href="./News articles.html">อ่านเพิ่มเติม &gt;</a>
+            </div>
+        </div>
+        <div style="flex-grow: 2;"></div>
+    </div>
+</body>
+</html>

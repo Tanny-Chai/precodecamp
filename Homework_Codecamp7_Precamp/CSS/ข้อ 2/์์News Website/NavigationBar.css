@@ -1,0 +1,48 @@
+.ulNa {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#b41313f6;
+    border-top: 1px solid white;
+  }
+  
+  .liNa {
+    float: left;
+  }
+  
+  .liNa a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 16px;
+  }
+
+  .liNa a:hover {
+    color: white;
+    border-bottom: 5px solid white;
+    text-decoration: none;
+    padding: 9px 16px;
+  }
+/* ---------------------------------- */
+  .ulUnder {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #263238;
+  }
+  .liUnder {
+    float: left;
+  }
+  .liUnder a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+  }
+  .liUnder a:hover {
+    color: white;
+    text-decoration: underline;
+  }
